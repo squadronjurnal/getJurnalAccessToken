@@ -1,0 +1,36 @@
+<html>
+<script type="text/javascript">
+
+//this function will only working when your url has words access_token which jurnal always return whenever your app is rendered in Jurnal Add Ons (installed & openned) for example: http://localhost/?access_token=1234567890
+
+function getAccessToken(){  
+
+var current_url = new URL(window.location);
+var searchAccessToken = current_url.searchParams.get("access_token");
+alert(searchAccessToken);  
+document.getElementById("viewAccessToken").innerHTML = searchAccessToken;
+}  
+
+</script>  
+
+<!-- onload to directly call your function and get your access_token -->
+<body onload="getAccessToken()">
+
+<!-- You can also trigger buy button -->
+<form>  
+<input type="button" value="Get Access Token" onclick="getAccessToken()"/>  
+</form>  
+
+	<div id="access_token">
+	</div>
+
+<!-- This is just for example to get access_token and show it publicly -->
+	<h1><p id="viewAccessToken"></p></h1>
+
+
+<!-- Notes: After you have got the access_token, you should save it to your DB and use it to connect your app to jurnal API: api.jurnal.id / sandbox.jurnal.id -->
+
+<!-- for more information you guys can do contact me at email: kevin.kie@jurnal.id or www.jurnal.id Thank you! --> 
+
+</body>
+</html>

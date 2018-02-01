@@ -30,7 +30,7 @@ For example I want to post a transaction: sales invoice to my company
 5. Visit https://api-jurnal.api-docs.io and goto section Sales Invoice 
 Use postman to test GET / POST / PATCH / DELETE by using base_url
 https://api.jurnal.id/partner/core/api/v1/products
-https://sandbox.jurnal.id/partner/core/api/v1/sales_invoices
+https://sandbox-api.jurnal.id/partner/core/api/v1/sales_invoices
 
 Thank You :)
 
